@@ -59,23 +59,24 @@ node src/index.js
 启动后终端会展示对话界面：
 
 ```
- █████╗ ██╗  ██████╗ ██╗      ██╗
-██╔══██╗ ██║ ██╔════╝ ██║      ██║
-███████║ ██║ ██║      ██║      ██║
-██╔══██║ ██║ ██║      ██║      ██║
-██║  ██║ ██║ ╚██████╗ ███████╗ ██║
-╚═╝  ╚═╝ ╚═╝  ╚═════╝ ╚═════╝ ╚═╝
+   ██    ████    ██████    ████   ██████   ███████ ██████  
+  ████    ██    ██    ██  ██  ██  ██    ██ ██      ██    ██
+ ██  ██   ██    ██       ██    ██ ██    ██ ██████  ██    ██
+████████  ██    ██       ██    ██ ██    ██ ██      ██████  
+██    ██  ██    ██    ██  ██  ██  ██    ██ ██      ██    ██
+██    ██ ████    ██████    ████   ██████   ███████ ██    ██
 
   ✨ AI 终端助手  v1.0.0
 
   ╭──────────────────────────────────────────────────────╮
   │  模型  qwen3.7-plus                                  │
   │  端点  dashscope.aliyuncs.com                        │
-  │  配置  ~/.coder/setting.json                         │
-  │  目录  ~/Documents/neoy/AI-Coding/ai-cli-code/cli-…  │
+  │  配置  ~/Documents/neoy/AI-Coding/ne-coder/.coder/…  │
+  │  目录  ~/Documents/neoy/AI-Coding/ne-coder           │
   ╰──────────────────────────────────────────────────────╯
 
   /help 查看命令  ·  /clear 清屏  ·  /exit 退出
+
 
 ❯ 
 ```
@@ -165,9 +166,6 @@ coder 提供以下本地工具，模型会根据需要自动调用：
   "OPENAI_BASE_URL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
   "OPENAI_MODEL": "qwen-flash",
   "OPENAI_EMBEDDING_MODEL": "text-embedding-v4",
-  "OPENAI_API_KEY": "sk-xxx",
-  "OPENAI_BASE_URL": "https://api.openai.com/v1",
-  "OPENAI_MODEL": "gpt-4o-mini",
   "models": [
     { "model": "qwen3.6-flash" },
     { "model": "qwen3.7-plus" },
@@ -202,7 +200,7 @@ coder 提供以下本地工具，模型会根据需要自动调用：
 ## 目录结构
 
 ```
-cli-client/
+ne-coder/
 ├── .coder/                 # 配置目录（项目级）
 │   ├── setting.json        # 配置文件
 │   ├── db/
